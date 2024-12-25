@@ -1,0 +1,1671 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =============================================================
+                         HOME PAGE
+================================================================ */
+
+/* Section 1 : Header and Hero Section */
+
+.section1 {
+  background-image: url("images/Banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* =============================================================
+                        SITE HEADER
+================================================================ */
+
+/* Navigation Bar Styling */
+nav {
+  width: 90%;
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 96px;
+  height: 18.99px;
+}
+
+nav ul {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #2c541d;
+}
+
+nav ul a.active {
+  color: #2c541d;
+  font-weight: bold;
+}
+
+/* Hamburger Menu Styling */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ccc;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0.2rem 0;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .menu-icon {
+    display: flex;
+    background-color: #74a84a;
+    padding: 15px;
+  }
+}
+
+/* Hero Section */
+
+.hero-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+.hero-section h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #2c541d;
+  font-size: 5.5rem;
+  letter-spacing: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: -1rem;
+}
+
+.hero-section p {
+  font-family: "Jost", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.btn {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #74a84a;
+  padding: 13px 40px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2c541d;
+}
+
+/* Section 2 */
+.section2 {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 6rem;
+}
+.services img {
+  max-width: 340px;
+}
+
+.services h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.services p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Section 3 */
+
+.section3 {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  margin: 0 auto;
+  max-width: 1100px;
+  gap: 7.5rem;
+}
+.about-us-text h3 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.about-us-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.about-us-img img {
+  min-width: 100%;
+
+  max-height: 395px;
+}
+
+/* Section 4 */
+.section4 {
+  text-align: center;
+  background-image: url("images/Call-to-action.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 532px;
+  padding-top: 7rem;
+}
+
+.section4 h4 {
+  letter-spacing: 0.308rem;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #2c541d;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.section4 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.5px;
+  padding-bottom: 3rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* =============================================================
+                         ABOUT PAGE
+================================================================ */
+
+/* Section 1 */
+
+.about-section1 {
+  background-image: url("images/About-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.about-hero-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.about-hero-section h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #2c541d;
+  font-size: 4.4rem;
+  letter-spacing: 0.531rem;
+  text-transform: uppercase;
+  margin-top: 10rem;
+}
+
+/* Section 2 */
+
+.about-section2 {
+  display: flex;
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  gap: 6rem;
+  padding: 6rem 0;
+}
+
+.section2-left img {
+  max-width: 530px;
+}
+
+.section2-right h2 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.section2-right p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #4c4c4c;
+  margin: 0;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+/* Section 3 */
+
+/* USED IN BOTH ABOUT & SERVICES PAGE */
+
+.talk-to-us {
+  text-align: center;
+  background-image: url("images/Talk-to-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 422px;
+  padding-top: 7rem;
+}
+
+.talk-to-us h3 {
+  letter-spacing: 0.308rem;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #2c541d;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.talk-to-us p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.5px;
+  padding-bottom: 3rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* =============================================================
+                        SERVICES PAGE
+================================================================ */
+
+/* Section 1 */
+
+.services-section1 {
+  background-image: url("images/Call-to-action.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.services-hero-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.services-hero-section h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #2c541d;
+  font-size: 4.4rem;
+  letter-spacing: 0.531rem;
+  text-transform: uppercase;
+  margin-top: 10rem;
+}
+
+/* Section 2 */
+
+/* LEFT STYLE */
+
+.section2-subsec-left-style {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  margin: 8rem auto;
+  gap: 4rem;
+  align-items: center;
+}
+
+.subsec-left h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.subsec-left p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #4c4c4c;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  margin-right: 2.3rem;
+}
+.services-btn {
+  background-color: #74a84a;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 15px 40px;
+  letter-spacing: 3px;
+  transition: background-color 0.3s ease;
+}
+.services-btn:hover {
+  background-color: #2c541d;
+}
+.subsec-left img {
+  max-width: 550px;
+}
+
+/* RIGHT STYLE */
+
+.section2-subsec-right-style {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  margin: 8rem auto;
+
+  gap: 4rem;
+  align-items: center;
+}
+
+.subsec-right {
+  margin-left: 3rem;
+}
+
+.subsec-right h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.subsec-right p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #4c4c4c;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  margin-right: 2rem;
+}
+
+.subsec-right img {
+  max-width: 550px;
+}
+
+/* =============================================================
+                        CONTACT PAGE
+================================================================ */
+
+/* Section 1 */
+
+.contact-section1 {
+  background-image: url("images/Contact-Banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.contact-hero-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.contact-hero-section h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #2c541d;
+  font-size: 4.4rem;
+  letter-spacing: 0.531rem;
+  text-transform: uppercase;
+  margin-top: 10rem;
+}
+
+/* Section 2 */
+
+/* Alignment CSS */
+
+.contact-section2,
+.email,
+.phone,
+.address {
+  display: flex;
+}
+input,
+textarea {
+  display: block;
+}
+
+/* page background color */
+
+.contact-container,
+.contact-page-footer {
+  background-color: #fafafa;
+  /* background-color: #d01a1a; */
+}
+
+/* Section 2 Contact Section Style */
+
+.contact-section2 {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  min-width: 1140px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Section 2 Form Container */
+.form-container {
+  width: 550px;
+
+  margin-right: 4rem;
+}
+.contact-details {
+  width: 456px;
+}
+
+.form-title h1 {
+  font-size: 2.3rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+
+.form {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+input,
+textarea {
+  background-color: #fafafa;
+  color: #666;
+  border-radius: 2px;
+  border: 1px solid #989898;
+  padding: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  width: 440px;
+  height: 55px;
+  margin: 1rem 0;
+}
+textarea {
+  height: 120px;
+}
+.form button {
+  background-color: #74a84a;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 15px 40px;
+  letter-spacing: 3px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.form button:hover {
+  background-color: #2c541d;
+}
+
+/* Section 2 Contact Details */
+.contact-details-title h2 {
+  font-size: 2.3rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+.contact-details h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #585858;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.contact-details p {
+  font-family: "Jost", Sans-serif;
+  font-size: 1.5rem;
+  color: #2c541d;
+}
+.email,
+.phone,
+.address {
+  margin-bottom: 2.5rem;
+}
+.email {
+  margin-top: 3rem;
+}
+.email-address,
+.phone-number,
+.address-detail {
+  margin-left: 1.2rem;
+}
+
+.social-media-links {
+  margin-left: 3.9rem;
+}
+
+.social-media-links-title h6 {
+  font-size: 1.25rem;
+  font-family: "Jost", Sans-serif;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.social-media-icons img {
+  width: 2rem;
+  margin-right: 0.5rem;
+  transition: filter 0.3s ease;
+}
+
+.social-media-icons img:hover {
+  filter: brightness(0.6);
+}
+
+/* =============================================================
+                         SITE FOOTER
+================================================================ */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  background-color: #f9f9f9;
+  width: 100%;
+  position: relative;
+}
+
+footer ul {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin: 0;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+footer ul a:hover {
+  color: #2c541d;
+}
+
+footer a.active {
+  color: #2c541d;
+}
+
+footer img {
+  width: 96px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-54%, -50%);
+}
+
+footer p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #333;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* =========================================================================
+
+                                RESPONSIVENESS
+
+============================================================================= */
+
+@media (max-width: 481px) {
+  /* Smaller smartpones */
+
+  /* =============================================================
+                        SITE HEADER
+================================================================ */
+
+  /* Hamburger Menu Styling */
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .menu-icon span {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ccc;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0.2rem 0;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  .menu-icon {
+    display: flex;
+    background-color: #74a84a;
+    padding: 15px;
+  }
+
+  /* =============================================================
+                         HOME PAGE
+================================================================ */
+
+  /* Section 1 : Header and Hero Section */
+
+  .section1 {
+    min-height: auto;
+    padding-bottom: 12rem;
+  }
+
+  /* Hero Section */
+
+  .hero-section h1 {
+    font-size: 3rem;
+
+    margin-bottom: 0.1rem;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+
+    padding: 8px 30px;
+  }
+
+  /* Section 2 */
+  .section2 {
+    max-width: 300px;
+    align-items: center;
+
+    flex-direction: column;
+  }
+  .services img {
+    max-width: 280px;
+  }
+
+  .services h2 {
+    font-size: 1.5rem;
+  }
+  .services p {
+    font-size: 0.8rem;
+  }
+
+  /* Section 3 */
+
+  .section3 {
+    max-width: 299px;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .about-us-text h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .about-us-text p {
+    line-height: 2;
+    font-size: 0.8rem;
+  }
+
+  .about-us-img img {
+    max-height: 299px;
+    max-width: 299px;
+  }
+
+  /* Section 4 */
+  .section4 {
+    min-height: 500px;
+  }
+
+  .section4 h4 {
+    font-size: 1.5rem;
+  }
+
+  .section4 p {
+    max-width: 299px;
+    font-size: 0.8rem;
+  }
+
+  /* =============================================================
+                         ABOUT PAGE
+================================================================ */
+
+  /* Section 1 */
+  .about-section1 {
+    min-height: 500px;
+  }
+  .about-hero-section h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  /* Section 2 */
+
+  .about-section2 {
+    flex-direction: column;
+    max-width: 299px;
+    gap: 1rem;
+  }
+
+  .section2-left img {
+    max-width: 280px;
+  }
+
+  .section2-right h2 {
+    font-size: 1.4rem;
+
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+
+  .section2-right p {
+    font-size: 0.7rem;
+  }
+
+  /* Section 3 */
+
+  /* USED IN BOTH ABOUT & SERVICES PAGE */
+
+  .talk-to-us h3 {
+    letter-spacing: 0.25rem;
+
+    font-size: 1.5rem;
+  }
+
+  .talk-to-us p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    padding-bottom: 2rem;
+    max-width: 280px;
+  }
+
+  /* =============================================================
+                        SERVICES PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .services-section1 {
+    min-height: 500px;
+  }
+
+  .services-hero-section h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+  /* Section 2 */
+
+  /* LEFT STYLE */
+
+  .section2-subsec-left-style {
+    flex-direction: column-reverse;
+
+    max-width: 299px;
+    margin: 6rem auto;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .subsec-left h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .subsec-left p {
+    font-size: 0.8rem;
+
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    margin-right: 0rem;
+  }
+  .services-btn {
+    font-size: 0.7rem;
+    padding: 8px 25px;
+  }
+
+  .subsec-left img {
+    max-width: 298px;
+  }
+
+  /* RIGHT STYLE */
+
+  .section2-subsec-right-style {
+    flex-direction: column;
+    max-width: 299px;
+    margin: 6rem auto;
+    gap: 1.5rem;
+  }
+
+  .subsec-right {
+    margin-left: 0rem;
+  }
+
+  .subsec-right h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .subsec-right p {
+    font-size: 0.8rem;
+
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    margin-right: 0rem;
+  }
+
+  .subsec-right img {
+    max-width: 298px;
+  }
+
+  /* =============================================================
+                        CONTACT PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .contact-section1 {
+    min-height: 500px;
+  }
+
+  /* Section 2 */
+
+  .contact-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-hero-section h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  /* Section 2 */
+
+  /* Section 2 Contact Section Style */
+
+  .contact-section2 {
+    width: 90%;
+    min-width: 299px;
+  }
+
+  /* Section 2 Form Container */
+  .form {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+  }
+  .form-container {
+    width: 299px;
+    margin-right: 0rem;
+  }
+
+  .form-title h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    font-size: 0.8rem;
+    max-width: 250px;
+    height: 40px;
+  }
+  textarea {
+    height: 120px;
+  }
+  .form button {
+    font-size: 0.7rem;
+    padding: 10px 30px;
+  }
+
+  /* Section 2 Contact Details */
+  .contact-details {
+    width: 270px;
+  }
+  .contact-details-title h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact-details h3 {
+    font-size: 0.8rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+  .email,
+  .phone,
+  .address {
+    margin-bottom: 2rem;
+  }
+  .email {
+    margin-top: 2rem;
+  }
+
+  .email-icon img,
+  .phone-icon img,
+  .address-icon img {
+    width: 32px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media-links-title h6 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .social-media-links {
+    margin-left: 0rem;
+  }
+
+  .social-media-icons {
+    gap: 1rem;
+  }
+  .social-media-icons img {
+    width: 1.5rem;
+    margin-right: 0rem;
+  }
+
+  /* =============================================================
+                         SITE FOOTER
+================================================================ */
+
+  footer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 765px) {
+  /* Tablets and larger smartphones */
+
+  /* =============================================================
+                         HOME PAGE
+================================================================ */
+
+  /* Section 1 : Header and Hero Section */
+
+  .section1 {
+    min-height: auto;
+    padding-bottom: 12rem;
+  }
+
+  /* Hero Section */
+
+  .hero-section h1 {
+    font-size: 3.5rem;
+
+    margin-bottom: 0.1rem;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+
+    padding: 10px 35px;
+  }
+
+  /* Section 2 */
+  .section2 {
+    max-width: 400px;
+    align-items: center;
+
+    flex-direction: column;
+  }
+  .services img {
+    max-width: 340px;
+  }
+
+  /* Section 3 */
+
+  .section3 {
+    max-width: 400px;
+    gap: 4rem;
+    flex-direction: column;
+  }
+  .about-us-text h3 {
+    margin-bottom: 1rem;
+  }
+
+  .about-us-text p {
+    line-height: 2;
+  }
+
+  .about-us-img img {
+    max-height: 300px;
+  }
+
+  /* Section 4 */
+  .section4 {
+    min-height: 500px;
+  }
+
+  .section4 h4 {
+    font-size: 2rem;
+  }
+
+  .section4 p {
+    max-width: 450px;
+  }
+
+  /* =============================================================
+                         ABOUT PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .about-hero-section h1 {
+    font-size: 3rem;
+    letter-spacing: 0.45rem;
+  }
+
+  /* Section 2 */
+
+  .about-section2 {
+    flex-direction: column;
+    max-width: 400px;
+    gap: 2rem;
+  }
+
+  .section2-left img {
+    max-width: 400px;
+  }
+
+  .section2-right h2 {
+    font-size: 1.75rem;
+
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+  }
+
+  .section2-right p {
+    font-size: 0.9rem;
+  }
+
+  /* Section 3 */
+
+  /* USED IN BOTH ABOUT & SERVICES PAGE */
+
+  .talk-to-us h3 {
+    letter-spacing: 0.25rem;
+
+    font-size: 2rem;
+  }
+
+  .talk-to-us p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    max-width: 400px;
+  }
+
+  /* =============================================================
+                        SERVICES PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .services-hero-section h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+
+  /* Section 2 */
+
+  /* LEFT STYLE */
+
+  .section2-subsec-left-style {
+    flex-direction: column-reverse;
+
+    max-width: 400px;
+    margin: 6rem auto;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .subsec-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .subsec-left p {
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+  .services-btn {
+    font-size: 0.9rem;
+    padding: 10px 30px;
+  }
+
+  .subsec-left img {
+    max-width: 400px;
+  }
+
+  /* RIGHT STYLE */
+
+  .section2-subsec-right-style {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 6rem auto;
+    gap: 2rem;
+  }
+
+  .subsec-right {
+    margin-left: 0rem;
+  }
+
+  .subsec-right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .subsec-right p {
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+
+  .subsec-right img {
+    max-width: 400px;
+  }
+
+  /* =============================================================
+                        CONTACT PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .contact-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-hero-section h1 {
+    font-size: 3rem;
+  }
+
+  /* Section 2 */
+
+  /* Section 2 Contact Section Style */
+
+  .contact-section2 {
+    width: 90%;
+    min-width: 400px;
+  }
+
+  /* Section 2 Form Container */
+  .form {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+  }
+  .form-container {
+    width: 400px;
+    margin-right: 0rem;
+  }
+
+  .form-title h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    font-size: 0.8rem;
+    max-width: 250px;
+    height: 40px;
+  }
+  textarea {
+    height: 120px;
+  }
+  .form button {
+    font-size: 0.7rem;
+    padding: 10px 30px;
+  }
+
+  /* Section 2 Contact Details */
+  .contact-details {
+    width: 270px;
+  }
+
+  .contact-details-title h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact-details h3 {
+    font-size: 0.8rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+  .email,
+  .phone,
+  .address {
+    margin-bottom: 2rem;
+  }
+  .email {
+    margin-top: 2rem;
+  }
+
+  .email-icon img,
+  .phone-icon img,
+  .address-icon img {
+    width: 32px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media-links-title h6 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .social-media-links {
+    margin-left: 0rem;
+  }
+
+  .social-media-icons img {
+    width: 1.5rem;
+  }
+
+  /* =============================================================
+                         SITE FOOTER
+================================================================ */
+
+  footer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 1124px) {
+  /* Tablets (Portrait and Landscape) */
+  /* =============================================================
+                         HOME PAGE
+================================================================ */
+
+  /* Hero Section */
+
+  .section1 {
+    min-height: auto;
+    padding-bottom: 12rem;
+  }
+
+  .hero-section h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-section p {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    letter-spacing: 0.22rem;
+
+    padding: 10px 37px;
+  }
+
+  /* Section 2 */
+  .section2 {
+    max-width: 800px;
+    gap: 2.2rem;
+  }
+
+  .services img {
+    max-width: 200px;
+  }
+
+  .services h2 {
+    font-size: 1.2rem;
+  }
+  .services p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+
+    letter-spacing: 0.5px;
+  }
+
+  /* Section 3 */
+
+  .section3 {
+    max-width: 700px;
+    gap: 4rem;
+  }
+  .about-us-text h3 {
+    font-size: 1.9rem;
+  }
+
+  .about-us-text p {
+    font-size: 0.9rem;
+  }
+
+  .about-us-img img {
+    max-height: 300px;
+  }
+
+  /* =============================================================
+                         ABOUT PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .about-hero-section h1 {
+    font-size: 3rem;
+  }
+
+  /* Section 2 */
+
+  .about-section2 {
+    max-width: 765px;
+    width: 80%;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+
+  .section2-left img {
+    max-width: 300px;
+  }
+
+  .section2-right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+  }
+
+  .section2-right p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+
+    margin: 0;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+
+  /* Section 3 */
+
+  /* USED IN BOTH ABOUT & SERVICES PAGE */
+
+  .talk-to-us {
+    text-align: center;
+    background-image: url("images/Talk-to-us.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 422px;
+    padding-top: 7rem;
+  }
+
+  .talk-to-us h3 {
+    font-size: 2.2rem;
+
+    margin-bottom: 0.5rem;
+  }
+
+  .talk-to-us p {
+    font-size: 0.9rem;
+  }
+
+  /* =============================================================
+                        SERVICES PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .services-hero-section h1 {
+    font-size: 3rem;
+  }
+
+  /* Section 2 */
+
+  .section2-subsec-left-style,
+  .section2-subsec-right-style {
+    width: 80%;
+    max-width: 766px;
+
+    gap: 2rem;
+  }
+
+  .subsec-left h2,
+  .subsec-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .subsec-left p,
+  .subsec-right p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+
+    line-height: 1.6;
+  }
+  .services-btn {
+    font-size: 0.6rem;
+    padding: 10px 26px;
+    letter-spacing: 3px;
+  }
+
+  .subsec-right img,
+  .subsec-left img {
+    max-width: 300px;
+  }
+
+  /* =============================================================
+                        CONTACT PAGE
+================================================================ */
+
+  /* Section 1 */
+
+  .contact-hero-section h1 {
+    font-size: 3rem;
+  }
+
+  /* Section 2 */
+
+  /* Section 2 Contact Section Style */
+
+  .contact-section2 {
+    width: 90%;
+    min-width: 766px;
+  }
+
+  /* Section 2 Form Container */
+  .form {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .form-container {
+    width: 326px;
+    margin-right: 3rem;
+  }
+  .contact-details {
+    width: 270px;
+  }
+
+  .form-title h1 {
+    font-size: 2rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.8rem;
+    max-width: 250px;
+    height: 40px;
+  }
+  textarea {
+    height: 120px;
+  }
+  .form button {
+    font-size: 0.7rem;
+    padding: 10px 30px;
+  }
+
+  /* Section 2 Contact Details */
+  .contact-details-title h2 {
+    font-size: 2rem;
+  }
+  .contact-details h3 {
+    font-size: 0.8rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+  .email,
+  .phone,
+  .address {
+    margin-bottom: 2rem;
+  }
+  .email {
+    margin-top: 2rem;
+  }
+  .email-icon img,
+  .phone-icon img,
+  .address-icon img {
+    width: 32px;
+  }
+
+  .social-media-links-title h6 {
+    font-size: 1rem;
+  }
+
+  .social-media-icons img {
+    width: 1.5rem;
+  }
+}
